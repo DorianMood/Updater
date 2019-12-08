@@ -12,7 +12,8 @@ class Updater {
             ConfigObject("taobao", "taobao.com", "#J_PromoPriceNum")
         )
 
-        fun update(array: Array<String>): ArrayList<Double> {
+        @JvmStatic
+        fun update(array: ArrayList<String>): ArrayList<Double> {
             var result = ArrayList<Double>()
             for (element in array) run {
                 var currentSite: ConfigObject? =
